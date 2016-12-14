@@ -125,11 +125,12 @@ USER vpic
 WORKDIR /home/vpic
 
 #RUN git clone --recursive https://github.com/losalamos/vpic.git
-RUN git clone https://github.com/demarle/vpic.git
+#RUN git clone https://github.com/demarle/vpic.git
+RUN git clone https://github.com/Tomyao/vpic.git
 WORKDIR /home/vpic/vpic
-RUN git checkout -b dockerify origin/dockerify
-RUN git submodule init
-RUN git submodule update
+#RUN git checkout -b dockerify origin/dockerify
+#RUN git submodule init
+#RUN git submodule update
 
 # RBTODO move this to runvpic.sh
 #RUN mkdir /home/vpic/vpic.bin
