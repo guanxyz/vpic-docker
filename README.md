@@ -34,6 +34,11 @@ Machinefile of 4 node cluster of m3.xlarge instances with 4 vCPUS:
   node002:4
   node003:4
 ````
+Start up the docker initialization with:
+````
+mpirun -hostfile hostfile --mca btl_tcp_if_include eth0 ./mpibuild_vpic.sh --verbose
+````
+
 <h3> Interactive Launch </h3>
    
   * Test your installation with an interactive launch.  The following starts sshd on all the slave docker containers in the background, then launches a root bash shell on the master node docker container, and then runs the simulation.
