@@ -20,13 +20,14 @@ chmod 777 -R ../vpicrun
 ````
 Once logged into the StarCluster, you will need to edit _hostfile_ and _machinefile_ to reflect the topology of the cluster that you 
 have launched.  _hostfile_ is in OpenMPI format and should have 1 slot per node and is used to launch docker on each node.
-_machinefile_ should be in MPICH format and have one slot per core or virtual processor in AWS. Instructions for 
-configuring parallelism are atj
-https://darwin.lanl.gov/projects/virtualized-environments/wiki/Configuring_hostfile_and_machinefile.
+_machinefile_ should be in MPICH format and have one slot per core or virtual processor in AWS.
+
+Instructions for configuring parallelism:
+
+
 Then pull the docker layers and run the code
 ````
 mpirun -hostfile hostfile --mca btl_tcp_if_include eth0 ./mpibuild_vpic.sh --verbose 
-mpirun -hostfile hostfile --mca btl_tcp_if_include eth0 ./mpirun_vpic.sh --verbose --output-filename=mpirun_vpic
 ````
    * --mca argument specifies to only use eth0 for mpi: otherwise openmpi tries to use docker0
    * this builds and runs the docker container vpic on each of the cluster nodes
