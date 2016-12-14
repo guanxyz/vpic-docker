@@ -43,7 +43,6 @@ docker run -it --net=host -v /home/vpic/vpicrun:/mnt/vpicrun vpic /bin/bash
 ./launch.sh
 ````
 Running docker with the _-it_ option gives you an interactive shell inside the container that you can use to edit and run codes.
-If you invoke _..//launch.sh_ it runs the code with the default parameters.
 
   * Monitor the output -- from the virtual machine (not inside the container).  You will need another shell.
   
