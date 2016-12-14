@@ -1,8 +1,6 @@
 
 <h3> Running BEE-atified VPIC using Docker in AWS </h3>
 
-**For Darwin instructions check out the darwin branch and see the BEE launcher https://github.com/randalburns/bee_launcher.git.**
-
 Follow the DSS Viz Wiki instructions on configuring and starting a cluster https://darwin.lanl.gov/projects/vizproject/wiki/AWS-setup-notes and https://darwin.lanl.gov/projects/vizproject/wiki/Starcluster-notes.
 
 Once a Starcluster Enviroment is configured (see below), running VPIC in AWS consists of logging into a StarCluster from your local machine. 
