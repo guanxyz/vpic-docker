@@ -20,9 +20,20 @@ Once logged into the StarCluster, you will need to edit _hostfile_ and _machinef
 have launched.  _hostfile_ is in OpenMPI format and should have 1 slot per node and is used to launch docker on each node.
 _machinefile_ should be in MPICH format and have one slot per core or virtual processor in AWS.
 
-Instructions for configuring parallelism:
-
-
+Examples for configuring parallelism:
+````
+Hostfile for a four node StarCluster:
+  master slots=1
+  node001 slots=1
+  node002 slots=1
+  node003 slots=1
+  
+Machinefile of 4 node cluster of m3.xlarge instances with 4 vCPUS:
+  master:4
+  node001:4
+  node002:4
+  node003:4
+````
 Then pull the docker layers and run the code
 ````
 mpirun -hostfile hostfile --mca btl_tcp_if_include eth0 ./mpibuild_vpic.sh --verbose 
