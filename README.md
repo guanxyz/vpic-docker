@@ -34,7 +34,7 @@ Machinefile of 4 node cluster of m3.xlarge instances with 4 vCPUS:
   node002:4
   node003:4
 ````
-Start up the docker initialization with:
+Build the docker image with:
 ````
 mpirun -hostfile hostfile --mca btl_tcp_if_include eth0 ./mpibuild_vpic.sh --verbose
 ````
