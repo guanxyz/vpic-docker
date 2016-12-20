@@ -1,0 +1,10 @@
+# Folder Name
+mytest
+# Deck
+/mnt/vpicrun/vpic/sample/turbulence_master.cxx
+# Files
+/mnt/vpicrun/vpic/sample/benchmark.py
+/mnt/vpicrun/vpic/sample/parse_timings.py
+# Scripts
+/mnt/vpicrun/vpic/sample/threshold.py
+# End

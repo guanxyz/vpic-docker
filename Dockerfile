@@ -57,6 +57,7 @@ WORKDIR /home/vpic/vpic
 ADD launch.sh /home/vpic
 ADD launch_sshd.sh /home/vpic
 ADD runvpic.sh /home/vpic
+ADD vpic_config /home/vpic
 ADD machinefile /home/vpic
 
 WORKDIR /home/vpic
