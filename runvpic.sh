@@ -75,13 +75,13 @@ for i in "${script_list[@]}"; do
     scriptname="${filename%.*}"
     printf "import $scriptname\n" >> insitu.py
 done
-echo "def RequestDataDescription(datadescription):\n" >> insitu.py
+printf "def RequestDataDescription(datadescription):\n" >> insitu.py
 for i in "${script_list[@]}"; do
     filename="${i##*/}"
     scriptname="${filename%.*}"
     printf "\t$scriptname.RequestDataDescription(datadescription)\n" >> insitu.py
 done
-echo "def DoCoProcessing(datadescription):\n" >> insitu.py
+printf "def DoCoProcessing(datadescription):\n" >> insitu.py
 for i in "${script_list[@]}"; do
     filename="${i##*/}"
     scriptname="${filename%.*}"
