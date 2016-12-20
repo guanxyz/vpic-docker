@@ -1,8 +1,8 @@
 #/bin/bash
 
-# NOTE: Configure the run using the Config file
+# NOTE: Configure the run using the vpic_config file
 
-# Pull information from Config
+# Pull information from vpic_config
 file="./vpic_config"
 FLAG=0
 file_list=()
