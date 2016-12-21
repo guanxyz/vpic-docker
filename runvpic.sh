@@ -104,4 +104,7 @@ make -j16
 # PUT RUNS BELOW
 
 # Run 1 using vpic_config
-run_config "./vpic_config"
+run_config "/mnt/vpicrun/vpic_config"
+
+# Run 2 using vpic_config2
+run_config "/mnt/vpicrun/vpic_config2"
