@@ -59,3 +59,24 @@ tail -f /home/vpic/vpicrun/.....
 ````
 mpirun -hostfile hostfile --mca btl_tcp_if_include eth0 ./mpistopcluster.sh --verbose
 ````
+
+<h3> Configuring a Run </h3>
+Make a config file like below:
+````
+# Folder Name
+<folder name>
+# Deck
+<deck path>
+# Files
+<file 1 path>
+<file 2 path>
+# Scripts
+<script 1 path>
+<script 2 path>
+# End
+````
+The folder name is the name (not path) of the folder where the run is going to occur.
+The deck name is the input deck path.
+The file paths are the files that you want to be in the same folder as where the run is going to occur.
+The script paths are the paths of the in-situ scripts that you want to run.
+Make sure to keep # Folder Name, # Deck, # Files, # Scripts, and # End, since runvpic.sh will use them to parse for the correct information.
