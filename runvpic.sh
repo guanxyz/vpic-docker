@@ -11,6 +11,7 @@ function run_config {
     do
         if [ "$line" == "# End" ]; then
             break
+        fi
         if [ "$line" == "# Folder Name" ]; then
             FLAG=1
             continue
