@@ -1,5 +1,5 @@
 
-<h3> Running BEE-atified VPIC using Docker in AWS </h3>
+<h3> Running Catalyst VPIC using Docker in AWS </h3>
 
 Follow the DSS Viz Wiki instructions on configuring and starting a cluster https://darwin.lanl.gov/projects/vizproject/wiki/AWS-setup-notes and https://darwin.lanl.gov/projects/vizproject/wiki/Starcluster-notes.
 
