@@ -82,4 +82,4 @@ After making a config file, make sure to add a new run in runvpic.sh after # PUT
 run_config <path to config file>
 ````
 
-Then just type in ./launch.sh to run all the runs set up in runvpic.sh.
+Then just run launch.sh to start going through all the runs set up in runvpic.sh.
