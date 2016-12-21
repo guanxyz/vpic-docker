@@ -42,10 +42,6 @@ do
     fi
 done <"$file"
 
-# Update VPIC
-cd /mnt/vpicrun/vpic
-git pull
-
 # Build VPIC
 cd /mnt/vpicrun/vpic.bin
 cmake \
