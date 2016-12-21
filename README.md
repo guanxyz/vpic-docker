@@ -75,8 +75,8 @@ Make a config file like below:
 <script 2 path>
 # End
 ````
-The folder name is the name (not path) of the folder where the run is going to occur.
-The deck name is the input deck path.
-The file paths are the files that you want to be in the same folder as where the run is going to occur.
-The script paths are the paths of the in-situ scripts that you want to run.
+The folder name is the name (not path) of the folder where the run is going to occur.\n
+The deck name is the input deck path.\n
+The file paths are the files that you want to be in the same folder as where the run is going to occur.\n
+The script paths are the paths of the in-situ scripts that you want to run.\n
 Make sure to keep # Folder Name, # Deck, # Files, # Scripts, and # End, since runvpic.sh will use them to parse for the correct information.
