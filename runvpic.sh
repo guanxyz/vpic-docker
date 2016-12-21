@@ -9,6 +9,8 @@ function run_config {
     script_list=()
     while IFS= read -r line
     do
+        if [ "$line" == "# End" ]; then
+            break
         if [ "$line" == "# Folder Name" ]; then
             FLAG=1
             continue
