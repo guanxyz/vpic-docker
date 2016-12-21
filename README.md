@@ -49,7 +49,7 @@ docker run -it --net=host -v /home/vpic/vpicrun:/mnt/vpicrun vpic /bin/bash
 ````
 Running docker with the _-it_ option gives you an interactive shell inside the container that you can use to edit and run codes.
 
-  * Monitor the output -- from the virtual machine (not inside the container).  You will need another shell.
+  * Monitor the output -- from the StarCluster shell (not inside the container).  You will need another shell.
   
 ````
 tail -f /home/vpic/vpicrun/.....
