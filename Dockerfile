@@ -38,7 +38,7 @@ WORKDIR /home/vpic
 
 #RUN git clone --recursive https://github.com/losalamos/vpic.git
 #RUN git clone https://github.com/demarle/vpic.git
-RUN git clone https://github.com/Tomyao/vpic.git
+RUN git clone https://github.com/guanxyz/vpic.git
 WORKDIR /home/vpic/vpic
 #RUN git checkout -b dockerify origin/dockerify
 #RUN git submodule init
@@ -58,6 +58,7 @@ ADD launch.sh /home/vpic
 ADD launch_sshd.sh /home/vpic
 ADD runvpic.sh /home/vpic
 ADD vpic_config /home/vpic
+ADD vpic_config2 /home/vpic
 ADD machinefile /home/vpic
 
 WORKDIR /home/vpic
