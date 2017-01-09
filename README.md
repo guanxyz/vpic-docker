@@ -11,7 +11,7 @@ starcluster sshmaster <clustername>
 Then pulling the VPIC code from docker and configuring your parallel environment.
 ````
 cd /home/vpic
-git clone https://github.com/Tomyao/vpicdocker.git
+git clone https://github.com/guanxyz/vpic-docker
 cd vpicdocker
 mkdir -p ../vpicrun
 chmod 777 -R ../vpicrun
